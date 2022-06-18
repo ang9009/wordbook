@@ -55,7 +55,7 @@ const Navbar = () => {
         nav div {
           margin-bottom: 35px;
           cursor: pointer;
-          color: var(--buttonColor);
+          color: var(--navIconColor);
           transition: 0.2s;
         }
 
@@ -64,18 +64,18 @@ const Navbar = () => {
         }
 
         nav div:hover {
-          color: #fff !important;
+          color: var(--selectedNavIconColor);
         }
 
         nav div:nth-child(${getNavbarIndicatorInfo(router.pathname)!.n}) {
-          color: #fff;
+          color: var(--selectedNavIconColor);
         }
 
         .logo {
           margin-top: auto;
           margin-bottom: 20px;
           font-size: 20px;
-          color: var(--buttonColor);
+          color: var(--navIconColor);
           cursor: pointer;
         }
 
@@ -87,7 +87,7 @@ const Navbar = () => {
           width: 3px;
           height: 40px; //24px (height of icon) + 16px
           border-radius: 1.5px;
-          background: var(--primaryColor);
+          background: var(--accentColor);
           transition: 0.2s;
         }
       `}</style>

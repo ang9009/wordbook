@@ -14,7 +14,7 @@ const Home: NextPage = () => {
           margin-top: 20px;
           background: none;
           border: none;
-          color: var(--primaryColor);
+          color: var(--accentColor);
           cursor: pointer;
         }
       `}</style>

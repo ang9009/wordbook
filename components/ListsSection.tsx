@@ -43,12 +43,13 @@ const ListsSection = () => {
         }
 
         .card-container:hover {
-          background: #333333;
+          background: var(--cardHoverColor);
         }
 
         .list-title {
           font-family: Inter, sans-serif;
           margin-bottom: 20px;
+          font-size: 15px;
         }
 
         .list-description {
@@ -68,7 +69,7 @@ const ListsSection = () => {
 
         .arrow:hover::after {
           position: absolute;
-          color: var(--primaryColor);
+          color: var(--accentColor);
           transform: translateX(5px);
         }
       `}</style>

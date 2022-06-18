@@ -1,10 +1,37 @@
 :root {
   --backgroundColor: #1C1C1C;
-  --buttonColor: #737373;
+  --navIconColor: #737373;
   --navBarPaddingTop: 80px;
   --navBarWidth: 64px;
-  --primaryColor: #82d7c7;
+  --selectedNavIconColor: #fff;
+  --accentColor: #69B5A6;
   --primaryBorderColor: #4a4a4a;
   --cardBackgroundColor: #2d2d2d;
+  --cardHoverColor: #333333;
   --cardDescriptionColor: #737373;
+  --pageHeadingColor: #fff;
+}
+
+[data-theme="light"] {
+  --backgroundColor: #ffffff;
+  --navIconColor: #acacac;
+  --selectedNavIconColor: #6b6b6b;
+  --accentColor: #1ec17a;
+  --primaryBorderColor: #d0d0d0;
+  --cardBackgroundColor: #fff;
+  --cardHoverColor: #f4f4f4;
+  --cardDescriptionColor: #acacac;
+  --pageHeadingColor: #515151;
+}
+
+[data-theme="stealth"] {
+  --backgroundColor: #09192e;
+  --navIconColor: #6e99d2;
+  --selectedNavIconColor: #fff;
+  --accentColor: #ff8986;
+  --primaryBorderColor: #184e8a;
+  --cardBackgroundColor: #0f2d4f;
+  --cardHoverColor: #0f335b;
+  --cardDescriptionColor: #6e99d2;
+  --pageHeadingColor: #fff
 }
