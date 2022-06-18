@@ -1,10 +1,9 @@
-import type { NextPage } from "next";
 import React from "react";
 
-const Home: NextPage = () => {
+const SearchPage = () => {
   return (
     <>
-      <h1>Home</h1>
+      <h1>Search</h1>
 
       <style jsx>{`
         * {
@@ -15,4 +14,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default SearchPage;

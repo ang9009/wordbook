@@ -9,7 +9,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <IconContext.Provider value={{ size: "24px" }}>
         <Navbar />
-        <Component {...pageProps} />
+        <section className="page-container">
+          <Component {...pageProps} />
+        </section>
       </IconContext.Provider>
     </>
   );

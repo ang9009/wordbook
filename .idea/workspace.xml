@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c8f1108-f5a2-4bac-af28-b335dd7cbbe0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/search.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/themes.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/navbarActiveIcon.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/navAnimation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/account.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/variables.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/variables.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -58,7 +59,7 @@
       <workItem from="1655468992107" duration="1000" />
       <workItem from="1655469005608" duration="7312000" />
       <workItem from="1655482663637" duration="754000" />
-      <workItem from="1655515701180" duration="1591000" />
+      <workItem from="1655515701180" duration="6736000" />
     </task>
     <servers />
   </component>

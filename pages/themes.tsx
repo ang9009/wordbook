@@ -1,10 +1,9 @@
-import type { NextPage } from "next";
 import React from "react";
 
-const Home: NextPage = () => {
+const ThemesPage = () => {
   return (
     <>
-      <h1>Home</h1>
+      <h1>Themes?</h1>
 
       <style jsx>{`
         * {
@@ -15,4 +14,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default ThemesPage;

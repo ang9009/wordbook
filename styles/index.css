@@ -8,3 +8,8 @@
 body {
   background: var(--backgroundColor);
 }
+
+.page-container {
+  margin-left: calc(var(--navBarWidth) + 100px);
+  margin-top: var(--navBarPaddingTop);
+}
