@@ -1,7 +1,7 @@
 import type { AppProps } from "next/app";
 import "../styles/index.css";
 import "../styles/variables.css";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/ui/Navbar";
 import { IconContext } from "react-icons";
 
 function MyApp({ Component, pageProps }: AppProps) {

@@ -5,11 +5,7 @@ const ThemesPage = () => {
     <>
       <h1>Themes?</h1>
 
-      <style jsx>{`
-        * {
-          color: #fff;
-        }
-      `}</style>
+      <style jsx>{``}</style>
     </>
   );
 };

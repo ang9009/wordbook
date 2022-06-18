@@ -5,67 +5,34 @@ import { HiHome } from "react-icons/hi";
 import { IconContext } from "react-icons";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import getNavbarIndicatorInfo from "../../utils/getNavbarIndicatorInfo";
 
 const Navbar = () => {
   const router = useRouter();
-  const [marginTop, setMarginTop] = useState<any>(null);
-
-  //TODO: make switch case that takes in router pathname and changes marker position
 
   return (
     <>
       <nav>
-        <div
-          onClick={(e) => {
-            setMarginTop(e.currentTarget.offsetTop);
-          }}
-          style={{
-            color: router.pathname === "/" ? "#fff" : "var(--buttonColor)",
-          }}
-        >
-          <Link href={`/`}>
+        <Link href={`/`}>
+          <div>
             <HiHome />
-          </Link>
-        </div>
-        <div
-          onClick={(e) => {
-            setMarginTop(e.currentTarget.offsetTop);
-          }}
-          style={{
-            color:
-              router.pathname === "/search" ? "#fff" : "var(--buttonColor)",
-          }}
-        >
-          <Link href={`/search`}>
+          </div>
+        </Link>
+        <Link href={`/search`}>
+          <div>
             <FaSearch />
-          </Link>
-        </div>
-        <div
-          onClick={(e) => {
-            setMarginTop(e.currentTarget.offsetTop);
-          }}
-          style={{
-            color:
-              router.pathname === "/account" ? "#fff" : "var(--buttonColor)",
-          }}
-        >
-          <Link href="/account">
+          </div>
+        </Link>
+        <Link href="/account">
+          <div>
             <BsFillPersonFill />
-          </Link>
-        </div>
-        <div
-          onClick={(e) => {
-            setMarginTop(e.currentTarget.offsetTop);
-          }}
-          style={{
-            color:
-              router.pathname === "/themes" ? "#fff" : "var(--buttonColor)",
-          }}
-        >
-          <Link href="/themes">
+          </div>
+        </Link>
+        <Link href="/themes">
+          <div>
             <FaPalette />
-          </Link>
-        </div>
+          </div>
+        </Link>
         <Link href="/">
           <h1 className="logo">wb</h1>
         </Link>
@@ -99,6 +66,10 @@ const Navbar = () => {
           color: #fff !important;
         }
 
+        nav div:nth-child(${getNavbarIndicatorInfo(router.pathname)!.n}) {
+          color: #fff;
+        }
+
         .logo {
           margin-top: auto;
           margin-bottom: 20px;
@@ -110,11 +81,10 @@ const Navbar = () => {
         #marker {
           position: absolute;
           left: 0;
-          top: ${marginTop
-            ? marginTop - 8
-            : marginTop}px; //16 divided by 2 to make it centered
+          top: ${getNavbarIndicatorInfo(router.pathname)!.marginTop -
+          8}px; //16px divided by 2 to make it centered
           width: 3px;
-          height: ${marginTop ? 40 : 0}px; //24 (height of icon) + 16
+          height: 40px; //24px (height of icon) + 16px
           border-radius: 1.5px;
           background: var(--primaryColor);
           transition: 0.2s;

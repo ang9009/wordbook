@@ -5,11 +5,7 @@ const SearchPage = () => {
     <>
       <h1>Search</h1>
 
-      <style jsx>{`
-        * {
-          color: #fff;
-        }
-      `}</style>
+      <style jsx>{``}</style>
     </>
   );
 };
