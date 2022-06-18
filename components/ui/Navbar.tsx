@@ -47,6 +47,7 @@ const Navbar = () => {
           height: calc(100vh);
           width: var(--navBarWidth);
           position: fixed;
+          user-select: none;
           top: 0;
           left: 0;
         }

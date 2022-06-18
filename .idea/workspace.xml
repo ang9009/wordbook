@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c8f1108-f5a2-4bac-af28-b335dd7cbbe0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/themes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/getNavbarIndicatorInfo.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/account.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/account.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ListsSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ListsSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/Navbar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/search.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/themes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/themes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/navbarActiveIcon.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/ListsSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/variables.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/variables.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +60,7 @@
       <workItem from="1655469005608" duration="7312000" />
       <workItem from="1655482663637" duration="754000" />
       <workItem from="1655515701180" duration="6821000" />
-      <workItem from="1655532713107" duration="5453000" />
+      <workItem from="1655532713107" duration="7007000" />
     </task>
     <servers />
   </component>
