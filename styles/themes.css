@@ -35,3 +35,15 @@
   --cardDescriptionColor: #6e99d2;
   --pageHeadingColor: #fff
 }
+
+[data-theme="skullcutter"] {
+  --backgroundColor: #032121;
+  --navIconColor: #0a6d6d;
+  --selectedNavIconColor: #fff;
+  --accentColor: #95e1dd;
+  --primaryBorderColor: #578486;
+  --cardBackgroundColor: #143033;;
+  --cardHoverColor: #193c3f;
+  --cardDescriptionColor: #527778;
+  --pageHeadingColor: #fff;
+}

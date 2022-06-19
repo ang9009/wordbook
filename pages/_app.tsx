@@ -1,13 +1,15 @@
 import type { AppProps } from "next/app";
 import "../styles/index.css";
-import "../styles/variables.css";
-import Navbar from "../components/ui/Navbar";
+import "../styles/themes.css";
+import Navbar from "../components/Navbar";
 import { IconContext } from "react-icons";
-import { useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    document.body.setAttribute("data-theme", "stealth");
+    //useState doesn't work here for some reason??
+    const savedTheme = JSON.parse(localStorage.getItem("theme") || "");
+    document.body.setAttribute("data-theme", savedTheme);
   }, []);
 
   return (

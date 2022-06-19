@@ -5,7 +5,7 @@ import { HiHome } from "react-icons/hi";
 import { IconContext } from "react-icons";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import getNavbarIndicatorInfo from "../../utils/getNavbarIndicatorInfo";
+import getNavbarIndicatorInfo from "../utils/getNavbarIndicatorInfo";
 
 const Navbar = () => {
   const router = useRouter();

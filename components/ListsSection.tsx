@@ -31,7 +31,7 @@ const ListsSection = () => {
         }
 
         .card-container {
-          padding: 30px 20px;
+          padding: 25px 20px;
           border: 1px solid var(--primaryBorderColor);
           width: 350.66px;
           background: var(--cardBackgroundColor);
@@ -48,7 +48,7 @@ const ListsSection = () => {
 
         .list-title {
           font-family: Inter, sans-serif;
-          margin-bottom: 20px;
+          margin-bottom: 15px;
           font-size: 15px;
         }
 
