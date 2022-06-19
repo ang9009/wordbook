@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import React from "react";
 import ListsSection from "../components/ListsSection";
-import { AiOutlinePlus } from "react-icons/ai";
 
 const Home: NextPage = () => {
   return (

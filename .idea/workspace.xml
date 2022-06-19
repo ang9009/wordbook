@@ -2,22 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c8f1108-f5a2-4bac-af28-b335dd7cbbe0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/data.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/reactSelectStyles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hooks/useEventListener.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hooks/useIsomorphicLayoutEffect.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hooks/useLocalStorage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ListsSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ListsSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/reactSelectStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/reactSelectStyles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/themes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/themes.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/variables.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/themes.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/themes.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/themes.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +70,7 @@
       <workItem from="1655547831983" duration="66000" />
       <workItem from="1655548070489" duration="4636000" />
       <workItem from="1655571200474" duration="1364000" />
-      <workItem from="1655605683833" duration="13532000" />
+      <workItem from="1655605683833" duration="17354000" />
     </task>
     <servers />
   </component>

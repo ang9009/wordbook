@@ -14,18 +14,22 @@ export const reactSelectStyles: StylesConfig<
   menu: (provided) => ({
     ...provided,
     fontSize: "0.8rem",
-    outline: "none",
     width: "20vw",
+    borderRadius: "7px",
+    boxShadow: "none",
+    background: "var(--cardBackgroundColor)",
   }),
   menuList: (provided) => ({
     ...provided,
-    outline: "none",
-    border: "none",
+    borderRadius: "7px",
+    border: "1px solid var(--primaryBorderColor)",
+    boxShadow: "none",
     background: "var(--cardBackgroundColor)",
+    "&:hover": {},
   }),
   control: (provided, state) => ({
     ...provided,
-    borderRadius: "12px",
+    borderRadius: "9px",
     border: "1px solid var(--primaryBorderColor)",
     background: "var(--cardBackgroundColor)",
     cursor: "pointer",
@@ -34,9 +38,16 @@ export const reactSelectStyles: StylesConfig<
     width: "20vw",
     "&:hover": {},
   }),
-  option: (provided) => ({
+  option: (provided, state) => ({
     ...provided,
     cursor: "pointer",
+    color: "var(--secondaryTextColor)",
+    "&:hover": {
+      backgroundColor: "var(--selectedOptionBgColor)",
+    },
+    backgroundColor: state.isSelected
+      ? "var(--selectedOptionBgColor)"
+      : "var(--cardBackgroundColor)",
   }),
   indicatorSeparator: (provided) => ({
     ...provided,
@@ -44,6 +55,6 @@ export const reactSelectStyles: StylesConfig<
   }),
   singleValue: (provided) => ({
     ...provided,
-    color: "var(--pageHeadingColor)",
+    color: "var(--primaryTextColor)",
   }),
 };

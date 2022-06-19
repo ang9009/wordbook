@@ -8,8 +8,9 @@
   --primaryBorderColor: #4a4a4a;
   --cardBackgroundColor: #2d2d2d;
   --cardHoverColor: #333333;
-  --cardDescriptionColor: #737373;
-  --pageHeadingColor: #fff;
+  --primaryTextColor: #fff;
+  --secondaryTextColor: #737373;
+  --selectedOptionBgColor: #3e3e3e;
 }
 
 [data-theme="light"] {
@@ -20,8 +21,9 @@
   --primaryBorderColor: #d0d0d0;
   --cardBackgroundColor: #fff;
   --cardHoverColor: #f4f4f4;
-  --cardDescriptionColor: #acacac;
-  --pageHeadingColor: #515151;
+  --primaryTextColor: #515151;
+  --secondaryTextColor: #acacac;
+  --selectedOptionBgColor: #ededed;
 }
 
 [data-theme="stealth"] {
@@ -32,8 +34,9 @@
   --primaryBorderColor: #184e8a;
   --cardBackgroundColor: #0f2d4f;
   --cardHoverColor: #0f335b;
-  --cardDescriptionColor: #6e99d2;
-  --pageHeadingColor: #fff
+  --primaryTextColor: #fff;
+  --secondaryTextColor: #6e99d2;
+  --selectedOptionBgColor: #043d6b;
 }
 
 [data-theme="skullcutter"] {
@@ -44,6 +47,6 @@
   --primaryBorderColor: #578486;
   --cardBackgroundColor: #143033;;
   --cardHoverColor: #193c3f;
-  --cardDescriptionColor: #527778;
-  --pageHeadingColor: #fff;
+  --primaryTextColor: #fff;
+  --secondaryTextColor: #527778;
 }

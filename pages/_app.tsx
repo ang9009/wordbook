@@ -7,8 +7,10 @@ import React, { useContext, useEffect, useState } from "react";
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    //useState doesn't work here for some reason??
-    const savedTheme = JSON.parse(localStorage.getItem("theme") || "");
+    //TODO: this is scuffed
+    const savedTheme = localStorage.getItem("theme")
+      ? JSON.parse(localStorage.getItem("theme") || "")
+      : "";
     document.body.setAttribute("data-theme", savedTheme);
   }, []);
 

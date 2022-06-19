@@ -35,7 +35,7 @@ const ListsSection = () => {
           border: 1px solid var(--primaryBorderColor);
           width: 350.66px;
           background: var(--cardBackgroundColor);
-          border-radius: 11px;
+          border-radius: 12px;
           user-select: none;
           cursor: pointer;
           transition: 0.2s all;
@@ -54,7 +54,7 @@ const ListsSection = () => {
 
         .list-description {
           font-size: 13px;
-          color: var(--cardDescriptionColor);
+          color: var(--secondaryTextColor);
         }
 
         .arrow::after {
@@ -63,7 +63,7 @@ const ListsSection = () => {
           top: 30px;
           right: 20px;
           content: "-->";
-          color: var(--cardDescriptionColor);
+          color: var(--secondaryTextColor);
           transition: all 0.2s ease-out;
         }
 
