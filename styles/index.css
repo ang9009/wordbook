@@ -15,11 +15,33 @@ body {
   margin: var(--navBarPaddingTop) calc(var(--navBarWidth) + 100px) 0;
 }
 
+::placeholder {
+  color: var(--secondaryTextColor);
+}
+
 p, h1 {
   color: var(--primaryTextColor);
 }
 
 h1 {
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 600;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: 0.2s all;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+/*Controls modal animation. Transform style is also in reactModalStyles.ts*/
+.ReactModal__Content--after-open {
+  transform: translate(-50%, -50%) scale(1) !important;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
 }

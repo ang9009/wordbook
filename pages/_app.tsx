@@ -1,27 +1,46 @@
 import type { AppProps } from "next/app";
+import { IconContext } from "react-icons";
+import React, { useEffect, useState } from "react";
+import { Hydrate, QueryClient, QueryClientProvider } from "react-query";
+import { useRouter } from "next/router";
+
+import Modal from "react-modal";
 import "../styles/index.css";
 import "../styles/themes.css";
 import Navbar from "../components/Navbar";
-import { IconContext } from "react-icons";
-import React, { useContext, useEffect, useState } from "react";
+import Head from "next/head";
+import { ReactQueryDevtools } from "react-query/devtools";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+  const path = router.asPath.split("/");
+  const [queryClient] = useState(() => new QueryClient());
+  Modal.setAppElement("#root"); //Required by react-modal
+
+  //Gets saved theme from local storage and applies it, uses "dark" theme as default otherwise
   useEffect(() => {
-    //TODO: this is scuffed
     const savedTheme = localStorage.getItem("theme")
-      ? JSON.parse(localStorage.getItem("theme") || "")
-      : "";
+      ? JSON.parse(localStorage.getItem("theme"))
+      : "dark";
     document.body.setAttribute("data-theme", savedTheme);
   }, []);
 
   return (
     <>
-      <IconContext.Provider value={{ size: "24px" }}>
-        <Navbar />
-        <section className="page-container">
-          <Component {...pageProps} />
-        </section>
-      </IconContext.Provider>
+      <Head>
+        <title>Wordbook</title>
+      </Head>
+
+      <div className={path[1] === "home" ? "page-container" : ""} id="root">
+        <QueryClientProvider client={queryClient}>
+          <Hydrate state={pageProps.dehydratedState}>
+            <IconContext.Provider value={{ size: "24px" }}>
+              {path[1] === "home" && <Navbar />}
+              <Component {...pageProps} />
+            </IconContext.Provider>
+          </Hydrate>
+        </QueryClientProvider>
+      </div>
     </>
   );
 }

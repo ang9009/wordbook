@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Option, themeOptions } from "../data/data";
+import { Option, themeOptions } from "../../data/data";
 import Select from "react-select";
-import useLocalStorage from "../hooks/useLocalStorage";
-import { reactSelectStyles } from "../data/reactSelectStyles";
+import useLocalStorage from "../../hooks/useLocalStorage";
+import { reactSelectStyles } from "../../data/reactSelectStyles";
 
 const ThemesPage = () => {
-  const [theme, setTheme] = useLocalStorage("theme", "");
+  const [theme, setTheme] = useLocalStorage("theme", "dark");
   //TODO: ask alan about this
   const [themeOption, setThemeOption] = useState<Option>();
 
@@ -24,8 +24,13 @@ const ThemesPage = () => {
         }}
         value={themeOption}
         styles={reactSelectStyles}
+        isSearchable={false}
       />
-      <style jsx>{``}</style>
+      <style jsx>{`
+        .Select-arrow {
+          background-color: var(--borderColor) !important;
+        }
+      `}</style>
     </>
   );
 };

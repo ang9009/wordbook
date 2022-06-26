@@ -1,29 +1,33 @@
 :root {
-  --backgroundColor: #1C1C1C;
   --navIconColor: #737373;
   --navBarPaddingTop: 80px;
   --navBarWidth: 64px;
+
+}
+
+[data-theme="dark"] {
+  --backgroundColor: #1C1C1C;
   --selectedNavIconColor: #fff;
   --accentColor: #69B5A6;
-  --primaryBorderColor: #4a4a4a;
-  --cardBackgroundColor: #2d2d2d;
-  --cardHoverColor: #333333;
+  --borderColor: #4a4a4a;
+  --cardBackgroundColor: #272727;
+  --cardHoverColor: #313131;
   --primaryTextColor: #fff;
-  --secondaryTextColor: #737373;
-  --selectedOptionBgColor: #3e3e3e;
+  --secondaryTextColor: #8d8d8d;
+  --tertiaryTextColor: #5f5f5f;
 }
 
 [data-theme="light"] {
   --backgroundColor: #ffffff;
-  --navIconColor: #acacac;
-  --selectedNavIconColor: #6b6b6b;
+  --navIconColor: #909090;
+  --selectedNavIconColor:  #515151;
   --accentColor: #1ec17a;
-  --primaryBorderColor: #d0d0d0;
-  --cardBackgroundColor: #fff;
-  --cardHoverColor: #f4f4f4;
+  --borderColor: #c7c7c7;
+  --cardBackgroundColor: #ffffff;
+  --cardHoverColor: #f1f1f1;
   --primaryTextColor: #515151;
-  --secondaryTextColor: #acacac;
-  --selectedOptionBgColor: #ededed;
+  --secondaryTextColor: #868686;
+  --tertiaryTextColor: #acacac;
 }
 
 [data-theme="stealth"] {
@@ -31,22 +35,10 @@
   --navIconColor: #6e99d2;
   --selectedNavIconColor: #fff;
   --accentColor: #ff8986;
-  --primaryBorderColor: #184e8a;
-  --cardBackgroundColor: #0f2d4f;
-  --cardHoverColor: #0f335b;
+  --borderColor: #184e8a;
+  --cardBackgroundColor: #0e2a4a;
+  --cardHoverColor: #06345a;
   --primaryTextColor: #fff;
   --secondaryTextColor: #6e99d2;
-  --selectedOptionBgColor: #043d6b;
-}
-
-[data-theme="skullcutter"] {
-  --backgroundColor: #032121;
-  --navIconColor: #0a6d6d;
-  --selectedNavIconColor: #fff;
-  --accentColor: #95e1dd;
-  --primaryBorderColor: #578486;
-  --cardBackgroundColor: #143033;;
-  --cardHoverColor: #193c3f;
-  --primaryTextColor: #fff;
-  --secondaryTextColor: #527778;
+  --tertiaryTextColor: #4e6f99;
 }

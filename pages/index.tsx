@@ -1,29 +1,24 @@
-import type { NextPage } from "next";
-import React from "react";
-import ListsSection from "../components/ListsSection";
+import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import supabase from "../lib/supabase";
+import signIn from "../utils/signIn";
 
-const Home: NextPage = () => {
+const SignInPage = () => {
+  const router = useRouter();
+  console.log(supabase.auth.user());
+
+  useEffect(() => {
+    if (supabase.auth.user()) {
+      router.push("/home");
+    }
+  }, []);
+
   return (
     <>
-      <h1>My lists</h1>
-      <button>+ New list</button>
-      <ListsSection />
-
-      <style jsx>{`
-        button {
-          margin-top: 20px;
-          border-radius: 5px;
-          border: none;
-          background: none;
-          color: var(--accentColor);
-          cursor: pointer;
-        }
-
-        h1 {
-        }
-      `}</style>
+      <h1>cum</h1>
+      <div onClick={signIn}>Sign in</div>
     </>
   );
 };
 
-export default Home;
+export default SignInPage;

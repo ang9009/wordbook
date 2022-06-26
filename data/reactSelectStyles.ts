@@ -8,7 +8,7 @@ export const reactSelectStyles: StylesConfig<
 > = {
   valueContainer: (provided) => ({
     ...provided,
-    padding: "10px 15px",
+    padding: "15px 15px",
     fontSize: "0.8rem",
   }),
   menu: (provided) => ({
@@ -22,7 +22,7 @@ export const reactSelectStyles: StylesConfig<
   menuList: (provided) => ({
     ...provided,
     borderRadius: "7px",
-    border: "1px solid var(--primaryBorderColor)",
+    border: "1px solid var(--borderColor)",
     boxShadow: "none",
     background: "var(--cardBackgroundColor)",
     "&:hover": {},
@@ -30,7 +30,7 @@ export const reactSelectStyles: StylesConfig<
   control: (provided, state) => ({
     ...provided,
     borderRadius: "9px",
-    border: "1px solid var(--primaryBorderColor)",
+    border: "1px solid var(--borderColor)",
     background: "var(--cardBackgroundColor)",
     cursor: "pointer",
     boxShadow: "none",
@@ -43,8 +43,9 @@ export const reactSelectStyles: StylesConfig<
     cursor: "pointer",
     color: "var(--secondaryTextColor)",
     "&:hover": {
-      backgroundColor: "var(--selectedOptionBgColor)",
+      backgroundColor: "var(--cardHoverColor)",
     },
+    padding: "10px 16px",
     backgroundColor: state.isSelected
       ? "var(--selectedOptionBgColor)"
       : "var(--cardBackgroundColor)",
@@ -56,5 +57,9 @@ export const reactSelectStyles: StylesConfig<
   singleValue: (provided) => ({
     ...provided,
     color: "var(--primaryTextColor)",
+  }),
+  dropdownIndicator: (provided) => ({
+    ...provided,
+    color: "var(--borderColor)",
   }),
 };

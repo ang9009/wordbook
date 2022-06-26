@@ -4,7 +4,7 @@ export interface Option {
 }
 
 export const themeOptions: Option[] = [
-  { label: "Dark", value: "" },
+  { label: "Dark", value: "dark" },
   { label: "Light", value: "light" },
   { label: "Stealth", value: "stealth" },
 ];

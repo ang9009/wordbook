@@ -2,13 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c8f1108-f5a2-4bac-af28-b335dd7cbbe0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/PrimaryButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/PrimaryTextInput.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/VocabularySection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/reactModalStyles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/supabase.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/home/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/home/lists/[listId].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/queries/getLists.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/types/list.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/signIn.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/signOut.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ListsSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ListsSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/reactSelectStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/reactSelectStyles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hooks/useLocalStorage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/useLocalStorage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/account.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/account.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/themes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/themes.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/themes.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/themes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/getNavbarIndicatorInfo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/getNavbarIndicatorInfo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,16 +61,19 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/alvinng/WebstormProjects/wordbook&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/usr/local/lib/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Users/alvinng/WebstormProjects/wordbook/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/home" />
+      <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$/context" />
       <recent name="$PROJECT_DIR$/components" />
       <recent name="$PROJECT_DIR$/components/ui" />
@@ -70,7 +97,26 @@
       <workItem from="1655547831983" duration="66000" />
       <workItem from="1655548070489" duration="4636000" />
       <workItem from="1655571200474" duration="1364000" />
-      <workItem from="1655605683833" duration="17354000" />
+      <workItem from="1655605683833" duration="23608000" />
+      <workItem from="1655656145773" duration="717000" />
+      <workItem from="1655697747707" duration="5310000" />
+      <workItem from="1655715372114" duration="3427000" />
+      <workItem from="1655721499468" duration="1678000" />
+      <workItem from="1655727894394" duration="2463000" />
+      <workItem from="1655733182740" duration="1381000" />
+      <workItem from="1655737005323" duration="1338000" />
+      <workItem from="1655740203088" duration="871000" />
+      <workItem from="1655790370943" duration="1286000" />
+      <workItem from="1655870154029" duration="21000" />
+      <workItem from="1655876784735" duration="2498000" />
+      <workItem from="1655882151011" duration="4593000" />
+      <workItem from="1655894461081" duration="3493000" />
+      <workItem from="1655986487138" duration="6192000" />
+      <workItem from="1656034907707" duration="2162000" />
+      <workItem from="1656074382509" duration="2686000" />
+      <workItem from="1656151928112" duration="10098000" />
+      <workItem from="1656174601183" duration="126000" />
+      <workItem from="1656211328740" duration="3602000" />
     </task>
     <servers />
   </component>

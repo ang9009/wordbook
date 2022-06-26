@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaPalette, FaSearch } from "react-icons/fa";
 import { BsFillPersonFill } from "react-icons/bs";
 import { HiHome } from "react-icons/hi";
@@ -9,31 +9,44 @@ import getNavbarIndicatorInfo from "../utils/getNavbarIndicatorInfo";
 
 const Navbar = () => {
   const router = useRouter();
+  const [marginTop, setMarginTop] = useState(0);
+  const [nthChild, setNthChild] = useState(0);
+
+  useEffect(() => {
+    const navbarIndicatorInfo = getNavbarIndicatorInfo(router.pathname);
+
+    if (navbarIndicatorInfo) {
+      setMarginTop(navbarIndicatorInfo.marginTop - 8);
+      setNthChild(navbarIndicatorInfo.n);
+    } else {
+      setNthChild(-1);
+    }
+  }, [router.pathname]);
 
   return (
     <>
       <nav>
-        <Link href={`/`}>
+        <Link href={`/home`}>
           <div>
             <HiHome />
           </div>
         </Link>
-        <Link href={`/search`}>
+        <Link href={`/home/search`}>
           <div>
             <FaSearch />
           </div>
         </Link>
-        <Link href="/account">
+        <Link href="/home/account">
           <div>
             <BsFillPersonFill />
           </div>
         </Link>
-        <Link href="/themes">
+        <Link href="/home/themes">
           <div>
             <FaPalette />
           </div>
         </Link>
-        <Link href="/">
+        <Link href="/home">
           <h1 className="logo">wb</h1>
         </Link>
         <span id="marker"></span>
@@ -67,7 +80,7 @@ const Navbar = () => {
           color: var(--selectedNavIconColor);
         }
 
-        nav div:nth-child(${getNavbarIndicatorInfo(router.pathname)!.n}) {
+        nav div:nth-child(${nthChild}) {
           color: var(--selectedNavIconColor);
         }
 
@@ -82,10 +95,11 @@ const Navbar = () => {
         #marker {
           position: absolute;
           left: 0;
-          top: ${getNavbarIndicatorInfo(router.pathname)!.marginTop -
-          8}px; //16px divided by 2 to make it centered
+          top: ${marginTop}px; //16px divided by 2 to make it centered
           width: 3px;
-          height: 40px; //24px (height of icon) + 16px
+          height: ${getNavbarIndicatorInfo(router.pathname)
+            ? 40
+            : 0}px; //24px (height of icon) + 16px
           border-radius: 1.5px;
           background: var(--accentColor);
           transition: 0.2s;
