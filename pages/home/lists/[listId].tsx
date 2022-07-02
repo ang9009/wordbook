@@ -1,11 +1,23 @@
 import React from "react";
 
 import VocabularySection from "../../../components/VocabularySection";
+import { GetServerSideProps } from "next";
+import { dehydrate, QueryClient, useQuery } from "react-query";
+import getWords from "../../../queries/getList";
+import getList from "../../../queries/getList";
+import { useRouter } from "next/router";
 
 const ListPage = () => {
+  const router = useRouter();
+  const listId = router.query.listId as string;
+
+  const {
+    data: { data: list, error },
+  } = useQuery(["words", listId], () => getList(listId as string));
+
   return (
     <>
-      <h1>Vocabulary list</h1>
+      <h1>{list.title}</h1>
       <VocabularySection />
 
       <style jsx>{`
@@ -38,6 +50,20 @@ const ListPage = () => {
       `}</style>
     </>
   );
+};
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const queryClient = new QueryClient();
+  const listId = context.query.listId as string;
+  console.log(listId);
+
+  await queryClient.prefetchQuery(["words", listId], () => getWords(listId));
+
+  return {
+    props: {
+      dehydratedState: dehydrate(queryClient),
+    },
+  };
 };
 
 export default ListPage;

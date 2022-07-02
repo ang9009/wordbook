@@ -22,6 +22,11 @@ const RadioOption: React.FC<Props> = ({
   return (
     <>
       <div className="option-container">
+        <label htmlFor={id}>
+          <p className="part-of-speech">{partOfSpeech}</p>
+          <p className="definition">{definition}</p>
+          <p className="example">{example}</p>
+        </label>
         <input
           type="radio"
           id={id}
@@ -31,16 +36,11 @@ const RadioOption: React.FC<Props> = ({
           }}
           checked={value === id}
         />
-        <label htmlFor={id}>
-          <p className="part-of-speech">{partOfSpeech}</p>
-          <p className="definition">{definition}</p>
-          <p className="example">{example}</p>
-        </label>
       </div>
 
       <style jsx>{`
         .option-container {
-          padding: 20px 0;
+          padding: 20px 15px;
           border-top: 1px solid var(--borderColor);
           display: flex;
         }
@@ -51,17 +51,43 @@ const RadioOption: React.FC<Props> = ({
 
         .option-container:last-child {
           border-bottom: 1px solid var(--borderColor);
+          margin-bottom: 20px;
         }
 
         input {
+          -webkit-appearance: none;
           cursor: pointer;
+          width: 20px;
+          height: 20px;
+          accent-color: var(--accentColor);
+          border-radius: 50%;
+          outline: none;
+          border: 2px solid gray;
+          align-self: center;
+        }
+
+        input:before {
+          content: "";
+          display: block;
+          width: 50%;
+          height: 50%;
+          margin: 25% auto;
+          border-radius: 50%;
+        }
+
+        input:checked:before {
+          background: var(--cardBackgroundColor);
+        }
+
+        input:checked {
+          background: var(--accentColor);
+          border-color: var(--accentColor);
         }
 
         label {
           color: var(--primaryTextColor);
-          margin-left: 30px;
           cursor: pointer;
-          width: 100%;
+          width: calc(100% - 20px);
         }
 
         .part-of-speech {

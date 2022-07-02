@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c8f1108-f5a2-4bac-af28-b335dd7cbbe0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/RadioOption.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/queries/getListAndWords.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/variables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/AddWordModalStepOne.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/WordCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/queries/getList.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/types/vocabSectionFormInput.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/types/word.interface.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ListsSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ListsSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/AddWordModalOne.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/AddWordModalStepTwo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/RadioOption.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/RadioOption.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/VocabularySection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/VocabularySection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/reactModalStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/reactModalStyles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/home/lists/[listId].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/lists/[listId].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home/themes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/themes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/themes.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/themes.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/getNavbarIndicatorInfo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/getNavbarIndicatorInfo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/getLists.ts" beforeDir="false" afterPath="$PROJECT_DIR$/queries/getAllLists.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/list.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/list.interface.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -112,7 +111,8 @@
       <workItem from="1656487896689" duration="7418000" />
       <workItem from="1656659082289" duration="15326000" />
       <workItem from="1656693218728" duration="598000" />
-      <workItem from="1656727895294" duration="925000" />
+      <workItem from="1656727895294" duration="2084000" />
+      <workItem from="1656731945103" duration="16512000" />
     </task>
     <servers />
   </component>

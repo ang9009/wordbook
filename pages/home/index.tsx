@@ -3,12 +3,12 @@ import React from "react";
 import { dehydrate, QueryClient, useQuery } from "react-query";
 
 import ListsSection from "../../components/ListsSection";
-import getLists from "../../queries/getLists";
+import getAllLists from "../../queries/getAllLists";
 
 const Home: NextPage = () => {
   const {
     data: { data: lists },
-  } = useQuery("lists", () => getLists());
+  } = useQuery("lists", () => getAllLists());
 
   return (
     <>
@@ -20,7 +20,7 @@ const Home: NextPage = () => {
 
 export const getServerSideProps: GetServerSideProps = async () => {
   const queryClient = new QueryClient();
-  await queryClient.prefetchQuery("lists", getLists);
+  await queryClient.prefetchQuery("lists", getAllLists);
 
   return {
     props: {
