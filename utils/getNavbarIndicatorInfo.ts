@@ -1,17 +1,16 @@
 export default function getNavbarIndicatorInfo(path: string) {
-  const page = path.substring(1);
+  const page = path.substring(1).split("/")[1];
 
   switch (page) {
-    case "home":
+    case undefined:
       return { n: 1, marginTop: 80 };
-    case "home/search":
+    case "search":
       return { n: 2, marginTop: 143 };
-    case "home/account":
+    case "account":
       return { n: 3, marginTop: 205 };
-    case "home/themes":
+    case "themes":
       return { n: 4, marginTop: 268 };
     default:
       return null;
-    //    TODO: fix this lmao
   }
 }

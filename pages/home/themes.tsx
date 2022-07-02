@@ -6,7 +6,6 @@ import { reactSelectStyles } from "../../data/reactSelectStyles";
 
 const ThemesPage = () => {
   const [theme, setTheme] = useLocalStorage("theme", "dark");
-  //TODO: ask alan about this
   const [themeOption, setThemeOption] = useState<Option>();
 
   useEffect(() => {

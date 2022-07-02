@@ -5,12 +5,15 @@ import signIn from "../utils/signIn";
 
 const SignInPage = () => {
   const router = useRouter();
-  console.log(supabase.auth.user());
 
   useEffect(() => {
     if (supabase.auth.user()) {
       router.push("/home");
     }
+
+    supabase.auth.onAuthStateChange((_event, session) => {
+      router.push("/home");
+    });
   }, []);
 
   return (

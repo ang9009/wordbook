@@ -16,7 +16,7 @@ body {
 }
 
 ::placeholder {
-  color: var(--secondaryTextColor);
+  color: var(--tertiaryTextColor);
 }
 
 p, h1 {
@@ -35,6 +35,7 @@ h1 {
 
 .ReactModal__Overlay--after-open{
   opacity: 1;
+  transition: 0.2s all;
 }
 
 /*Controls modal animation. Transform style is also in reactModalStyles.ts*/

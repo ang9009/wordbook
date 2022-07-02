@@ -2,37 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c8f1108-f5a2-4bac-af28-b335dd7cbbe0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/PrimaryButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/PrimaryTextInput.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/VocabularySection.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/reactModalStyles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/supabase.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/home/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/home/lists/[listId].tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/queries/getLists.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/list.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/signIn.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/signOut.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/RadioOption.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/queries/getListAndWords.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/variables.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ListsSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ListsSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/reactSelectStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/reactSelectStyles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hooks/useLocalStorage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/useLocalStorage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/VocabularySection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/VocabularySection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/reactModalStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/reactModalStyles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/account.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/account.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home/lists/[listId].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/lists/[listId].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home/themes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/themes.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/search.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/themes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/themes.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/themes.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/themes.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/getNavbarIndicatorInfo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/getNavbarIndicatorInfo.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -116,7 +99,20 @@
       <workItem from="1656074382509" duration="2686000" />
       <workItem from="1656151928112" duration="10098000" />
       <workItem from="1656174601183" duration="126000" />
-      <workItem from="1656211328740" duration="3602000" />
+      <workItem from="1656211328740" duration="4266000" />
+      <workItem from="1656222618320" duration="655000" />
+      <workItem from="1656250877405" duration="4277000" />
+      <workItem from="1656299490497" duration="17000" />
+      <workItem from="1656328617672" duration="3681000" />
+      <workItem from="1656390294456" duration="2412000" />
+      <workItem from="1656393155499" duration="4323000" />
+      <workItem from="1656402606789" duration="2308000" />
+      <workItem from="1656412046422" duration="2339000" />
+      <workItem from="1656423192074" duration="599000" />
+      <workItem from="1656487896689" duration="7418000" />
+      <workItem from="1656659082289" duration="15326000" />
+      <workItem from="1656693218728" duration="598000" />
+      <workItem from="1656727895294" duration="925000" />
     </task>
     <servers />
   </component>

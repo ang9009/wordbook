@@ -1,18 +1,11 @@
 import React from "react";
+
 import VocabularySection from "../../../components/VocabularySection";
-import { GrFormSearch } from "react-icons/gr";
-import PrimaryButton from "../../../components/PrimaryButton";
 
 const ListPage = () => {
   return (
     <>
       <h1>Vocabulary list</h1>
-      <PrimaryButton
-        text={"+ New word"}
-        color={"var(--accentColor)"}
-        mt={"20px"}
-      />
-      <input type="text" className="search-bar" placeholder="Search" />
       <VocabularySection />
 
       <style jsx>{`

@@ -61,6 +61,7 @@ const ListsSection = ({ lists }) => {
             <div
               className="card-container arrow"
               onClick={() => router.push(`/home/lists/${list.id}`)}
+              key={list.id}
             >
               <p className="list-title">{list.title}</p>
               <p className="list-description">9 words | last updated today</p>
@@ -151,7 +152,7 @@ const ListsSection = ({ lists }) => {
         }
 
         .modal-form-container {
-          width: 100%;
+          width: 20vw;
           display: flex;
           flex-direction: column;
         }

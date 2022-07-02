@@ -1,12 +1,6 @@
-:root {
-  --navIconColor: #737373;
-  --navBarPaddingTop: 80px;
-  --navBarWidth: 64px;
-
-}
-
 [data-theme="dark"] {
   --backgroundColor: #1C1C1C;
+  --navIconColor: #737373;
   --selectedNavIconColor: #fff;
   --accentColor: #69B5A6;
   --borderColor: #4a4a4a;
