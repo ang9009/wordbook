@@ -1,5 +1,4 @@
 import React from "react";
-import { AiOutlineStar } from "react-icons/ai";
 import Word from "../types/word.interface";
 
 interface Props {
@@ -23,9 +22,10 @@ const WordCard: React.FC<Props> = ({ wordObject, number }) => {
           <p className="word-definition">{wordObject.definition}</p>
           <p className="example-sentence">{wordObject.example}</p>
         </div>
-        <div className="buttons-container">
-          <AiOutlineStar size={"18px"} />
-        </div>
+        {/*TODO: add hover buttons*/}
+        {/*<div className="buttons-container">*/}
+        {/*  <AiOutlineStar size={"18px"} />*/}
+        {/*</div>*/}
       </div>
 
       <style jsx>{`
@@ -34,7 +34,7 @@ const WordCard: React.FC<Props> = ({ wordObject, number }) => {
           position: relative;
           align-items: center;
           cursor: pointer;
-          height: 109px;
+          height: 98px;
           padding: 30px 20px;
         }
 

@@ -2,19 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c8f1108-f5a2-4bac-af28-b335dd7cbbe0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/AddWordModalStepOne.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/WordCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/queries/getList.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/vocabSectionFormInput.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/word.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/AddListModal.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/AddWordModalOne.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/AddWordModalStepTwo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/RadioOption.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/RadioOption.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/AddWordModalStepOne.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/AddWordModalStepOne.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/AddWordModalStepTwo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/AddWordModalStepTwo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ListsSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ListsSection.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/VocabularySection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/VocabularySection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/WordCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/WordCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/reactModalStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/reactModalStyles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/home/lists/[listId].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/lists/[listId].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queries/getLists.ts" beforeDir="false" afterPath="$PROJECT_DIR$/queries/getAllLists.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/list.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/list.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/getAllLists.ts" beforeDir="false" afterPath="$PROJECT_DIR$/queries/getAllLists.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +28,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -112,7 +115,12 @@
       <workItem from="1656659082289" duration="15326000" />
       <workItem from="1656693218728" duration="598000" />
       <workItem from="1656727895294" duration="2084000" />
-      <workItem from="1656731945103" duration="16512000" />
+      <workItem from="1656731945103" duration="17634000" />
+      <workItem from="1656934762206" duration="6168000" />
+      <workItem from="1656947704846" duration="102000" />
+      <workItem from="1657002245606" duration="714000" />
+      <workItem from="1657002986025" duration="1235000" />
+      <workItem from="1657291992170" duration="1224000" />
     </task>
     <servers />
   </component>

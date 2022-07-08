@@ -28,6 +28,7 @@ h1 {
   font-weight: 600;
 }
 
+/*React modal styles*/
 .ReactModal__Overlay {
   opacity: 0;
   transition: 0.2s all;
@@ -45,4 +46,20 @@ h1 {
 
 .ReactModal__Overlay--before-close{
   opacity: 0;
+}
+
+/*Toast styles*/
+.Toastify__toast-theme--light {
+  color: var(--primaryTextColor) !important;
+  background: var(--cardBackgroundColor) !important;
+  box-shadow: none !important;
+}
+
+.Toastify__close-button--light {
+  color: var(--borderColor) !important;
+  opacity: 1 !important;
+}
+
+.Toastify__progress-bar-theme--light {
+  background: var(--accentColor) !important;
 }

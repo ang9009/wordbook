@@ -1,7 +1,7 @@
 import React from "react";
 import vocabSectionFormInput from "../types/vocabSectionFormInput.interface";
 import { Controller } from "react-hook-form";
-import { useMutation, useQueryClient } from "react-query";
+import { useMutation, useQuery, useQueryClient } from "react-query";
 import supabase from "../lib/supabase";
 
 import RadioOption from "./RadioOption";

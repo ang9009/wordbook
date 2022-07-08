@@ -9,8 +9,8 @@ export const reactModalStyles = {
     padding: "30px",
     transition: "all 0.2s",
     borderRadius: "12px",
-    backgroundColor: "var(--cardBackgroundColor)",
     border: "none",
+    backgroundColor: "var(--cardBackgroundColor)",
   },
   overlay: {
     backgroundColor: "rgba(0, 0, 0, 0.4)",

@@ -5,12 +5,15 @@ import { Hydrate, QueryClient, QueryClientProvider } from "react-query";
 import { useRouter } from "next/router";
 
 import Modal from "react-modal";
+import Head from "next/head";
+import { ReactQueryDevtools } from "react-query/devtools";
+import { ToastContainer } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
 import "../styles/index.css";
 import "../styles/themes.css";
 import "../styles/variables.css";
 import Navbar from "../components/Navbar";
-import Head from "next/head";
-import { ReactQueryDevtools } from "react-query/devtools";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -38,6 +41,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             <IconContext.Provider value={{ size: "24px" }}>
               {path[1] === "home" && <Navbar />}
               <Component {...pageProps} />
+              <ToastContainer autoClose={2000} />
             </IconContext.Provider>
           </div>
           <ReactQueryDevtools />

@@ -2,8 +2,10 @@ import React from "react";
 import PrimaryTextInput from "./PrimaryTextInput";
 import PrimaryButton from "./PrimaryButton";
 import vocabSectionFormInput from "../types/vocabSectionFormInput.interface";
-import { useMutation } from "react-query";
+import { useMutation, useQuery } from "react-query";
 import fetchWordData from "../utils/fetchWordData";
+import { toast } from "react-toastify";
+import getList from "../queries/getList";
 
 const AddWordModalStepOne = ({
   handleSubmit,
@@ -12,9 +14,20 @@ const AddWordModalStepOne = ({
   setWord,
   setMeaningsData,
   setModalStep,
+  listId,
+  word,
 }) => {
+  const {
+    data: { data: list, error },
+  } = useQuery(["words", listId], () => getList(listId as string));
+
   const { mutate } = useMutation(
     async (input: vocabSectionFormInput) => {
+      if (list.words.find((wordObject) => wordObject.word === input.word)) {
+        toast(`"${input.word}" has already been added to this list!`);
+        return;
+      }
+
       setWord(input.word);
       return await fetchWordData(input.word);
     },
@@ -22,6 +35,9 @@ const AddWordModalStepOne = ({
       onSuccess: (data) => {
         setMeaningsData(data.meanings);
         setModalStep(2);
+      },
+      onError: () => {
+        toast(`This word does not exist. Please check your spelling.`);
       },
     }
   );
